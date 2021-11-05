@@ -3,7 +3,7 @@
 
 body {
   /* background-color: rgb(20, 20, 20); */
-  background-color: aquamarine;
+  background-color: gray;
   color: rgb(255, 255, 255);
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
@@ -26,7 +26,7 @@ li {
   margin: 0.5rem 1rem;
 }
 
-.logo-section {
+.hero-section {
   margin-top: 17vh;
   text-align: center;
 }
@@ -39,4 +39,32 @@ h1 {
 
 .light-text {
   font-weight: 100;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul {
+  display: flex;
+  padding: 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.wave {
+  fill: rgb(0, 0, 0);
+  width: 100vw;
+  height: 60vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
 }
