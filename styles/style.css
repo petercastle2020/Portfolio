@@ -67,7 +67,7 @@ a {
   left: 0;
 }
 
-.nav-bar {
+.nav-slide {
   width: 7rem;
   height: 28rem;
   background-color: rgb(255, 255, 255);
@@ -75,6 +75,42 @@ a {
   position: fixed;
   right: 0;
   top: 20vh;
+}
+
+#nav-bar {
+  width: 7rem;
+  height: 28rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2rem 0 0 2rem;
+  /* position: fixed; */
+  position: absolute;
+  right: -6rem;
+  top: 20vh;
+}
+
+.nav-bar {
+  width: 7rem;
+  height: 28rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2rem 0 0 2rem;
+  /* position: fixed; */
+  position: absolute;
+  right: -6rem;
+  top: 20vh;
+
+  animation-name: slideLeft;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideLeft {
+  from {
+    right: -6rem;
+  }
+  to {
+    right: 0;
+  }
 }
 
 .nav-item {
@@ -89,4 +125,5 @@ a {
 .nav-item a {
   text-decoration: none;
   color: rgb(0, 0, 0);
+  font-weight: 500;
 }

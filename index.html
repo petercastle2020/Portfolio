@@ -7,7 +7,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles/style.css" />
   </head>
-  <body>
+  <body onload="slideBar()">
     <svg xmlns="http://www.w3.org/200/svg" version="1.1" class="wave">
       <path
         d="
@@ -23,7 +23,7 @@
         <animate
           repeatCount="indefinite"
           attributeName="d"
-          dur="60s"
+          dur="45s"
           attributeType="XML"
           values="
           M0 77
@@ -79,11 +79,11 @@
 
     <section class="hero-section">
       <h1>V<span class="light-text">&</span>P</h1>
-      <div class="nav-bar">
-        <div class="nav-item"><a>Work</a></div>
-        <div class="nav-item"><a>About me</a></div>
-        <div class="nav-item"><a>Contact</a></div>
-        <div class="nav-item"><a>Contact</a></div>
+      <div div id="nav-bar">
+        <div class="nav-item"><a href="something.com">Work</a></div>
+        <div class="nav-item"><a href="something.com">About me</a></div>
+        <div class="nav-item"><a href="something.com">Contact</a></div>
+        <div class="nav-item"><a href="something.com">Contact</a></div>
       </div>
     </section>
     <footer>
@@ -93,5 +93,6 @@
         <a href="http://www.linkedin.com/"><li>LinkedIn</li></a>
       </ul>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
