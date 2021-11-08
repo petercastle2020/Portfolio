@@ -193,7 +193,7 @@ a:hover {
   width: 12rem;
 }
 
-.about-wave {
+.under-wave {
   fill: rgb(0, 0, 0);
   width: 100vw;
   height: 60vh;
@@ -296,4 +296,64 @@ a:hover {
   animation-duration: 2s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
+}
+
+/* */
+
+.skills-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-container h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60vh;
+  justify-content: center;
+}
+
+.skills-row {
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+
+  justify-content: space-around;
+}
+
+.skills-row div {
+  width: 12%;
+
+  text-align: center;
+  padding: 0;
+  margin: 1rem;
+  align-items: center;
+}
+
+.svg-icon {
+  width: 60%;
+  height: 60%;
+}
+
+@media only screen and (min-width: 1500px) {
+  .skills-row {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    height: 40%;
+    justify-content: space-between;
+  }
+
+  .svg-icon {
+    width: 50%;
+    height: 50%;
+  }
 }
