@@ -67,7 +67,7 @@ footer {
 
 footer ul {
   display: flex;
-  padding: 3rem;
+  padding: 1.5rem;
 }
 
 a {
@@ -86,16 +86,6 @@ a:hover {
   position: fixed;
   bottom: 0;
   left: 0;
-}
-
-.nav-slide {
-  width: 7rem;
-  height: 28rem;
-  background-color: rgb(255, 255, 255);
-  border-radius: 2rem 0 0 2rem;
-  position: fixed;
-  right: 0;
-  top: 20vh;
 }
 
 #nav-bar {
@@ -120,7 +110,7 @@ a:hover {
   top: 20vh;
 
   animation-name: slideLeft;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
@@ -192,7 +182,7 @@ a:hover {
 }
 
 .about-container p {
-  margin-bottom: 4rem;
+  margin: 4rem 4rem;
   text-align: center;
 }
 
@@ -203,7 +193,7 @@ a:hover {
   width: 12rem;
 }
 
-.aboutwave {
+.about-wave {
   fill: rgb(0, 0, 0);
   width: 100vw;
   height: 60vh;
@@ -211,4 +201,99 @@ a:hover {
   bottom: 0;
   left: 0;
   z-index: -1;
+}
+
+/* Home page nav-bar */
+
+.home-nav-bar-item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-nav-bar-item a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+#home-nav-bar {
+  width: 7rem;
+  height: 4rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2rem 0rem 0rem 2rem;
+  /* position: fixed; */
+  position: absolute;
+  right: -6rem;
+  top: 5vh;
+}
+
+.home-nav-bar {
+  width: 7rem;
+  height: 4rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2rem 0rem 0rem 2rem;
+  /* position: fixed; */
+  position: absolute;
+  right: 0rem;
+  top: 5vh;
+
+  animation-name: slideLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideLeft {
+  from {
+    right: -6rem;
+  }
+  to {
+    right: 0;
+  }
+}
+
+/* Contact page nav-bar */
+
+.contact-nav-bar-item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-nav-bar-item a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+#contact-nav-bar {
+  width: 7rem;
+  height: 4rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2rem 0rem 0rem 2rem;
+  /* position: fixed; */
+  position: absolute;
+  right: -6rem;
+  top: 13vh;
+}
+
+.contact-nav-bar {
+  width: 7rem;
+  height: 4rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 2rem 0rem 0rem 2rem;
+  /* position: fixed; */
+  position: absolute;
+  right: 0rem;
+  top: 13vh;
+
+  animation-name: slideLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
 }
