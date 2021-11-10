@@ -157,11 +157,6 @@ a:hover {
   text-decoration: underline;
 }
 
-.sub-pages-footer {
-  position: relative;
-  margin-bottom: 0;
-}
-
 /* About page */
 
 .about-container {
@@ -298,7 +293,7 @@ a:hover {
   animation-fill-mode: forwards;
 }
 
-/* */
+/* Skills Page */
 
 .skills-container {
   margin-top: 2rem;
@@ -309,7 +304,7 @@ a:hover {
 .skills-container h1 {
   font-size: 4rem;
   font-weight: 500;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   text-align: center;
 }
 
@@ -347,13 +342,8 @@ a:hover {
   .skills-row {
     display: flex;
     flex-direction: row;
-    width: 80vw;
+    width: 60vw;
     height: 40%;
     justify-content: space-between;
-  }
-
-  .svg-icon {
-    width: 50%;
-    height: 50%;
   }
 }
