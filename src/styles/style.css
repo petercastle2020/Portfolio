@@ -396,6 +396,30 @@ a:hover {
   width: 100%;
 }
 
+@media only screen and (max-width: 600px) {
+  .form-submit {
+    width: 90%;
+    position: relative;
+    top: 15vh;
+  }
+
+  .form-row .form-control {
+    font-family: "Josefin Sans", sans-serif;
+    width: 97%;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-submit .form-row {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0rem;
+  }
+}
+
 .form-submit button {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1rem;
@@ -405,4 +429,10 @@ a:hover {
   background-color: rgb(255, 255, 255);
   border: none;
   border-radius: 0.25rem;
+}
+
+.form-submit button:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(20, 20, 20);
+  cursor: pointer;
 }
