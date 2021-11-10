@@ -436,3 +436,17 @@ a:hover {
   background-color: rgb(20, 20, 20);
   cursor: pointer;
 }
+
+/* Thank you Page */
+
+.thank-you {
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  top: 40vh;
+}
+
+.thank-you h1 {
+  font-size: 8rem;
+  margin-bottom: 2rem;
+}
