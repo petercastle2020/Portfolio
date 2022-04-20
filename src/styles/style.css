@@ -143,27 +143,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Work page */
-
-.subtitle {
-  margin: 4rem;
-}
-
-.work-details {
-  width: 50%;
-}
-
-.work-details tr {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 5rem;
-}
-
-.work-details a:hover {
-  text-decoration: underline;
-}
-
 /* About page */
 
 .about-container {
@@ -468,6 +447,21 @@ a:hover {
 
 /* Work page */
 
+.subtitle {
+  margin: 4rem;
+}
+
+.work-details {
+  width: 50%;
+}
+
+.work-details tr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
 .flip-card {
   background-color: transparent;
   width: 500px;
@@ -496,17 +490,22 @@ a:hover {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  background-color: white;
 }
 
 .flip-card-front {
-  background-color: #bbb;
+  background-color: white;
   color: black;
 }
 
 .flip-card-back {
-  background-color: #2980b9;
+  background-color: white;
   color: white;
   transform: rotateY(180deg);
+}
+
+td {
+  margin: 10px;
 }
 
 td > a {
