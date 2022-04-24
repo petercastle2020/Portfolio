@@ -149,13 +149,15 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5rem;
+  margin: 0 5rem 0rem 5rem;
 }
 
 .about-container h1 {
   font-size: 4rem;
   font-weight: 500;
-  margin-bottom: 4rem;
+  margin: 6rem 0 4rem 0;
+  text-align: center;
+  line-height: 1.5;
 }
 
 .about-container h2 {
@@ -172,8 +174,8 @@ a:hover {
 .about-container img {
   border-radius: 50%;
   margin-bottom: 3rem;
-  height: 20rem;
-  width: 20rem;
+  height: 15rem;
+  width: 15rem;
 }
 
 .under-wave {
@@ -186,7 +188,29 @@ a:hover {
   z-index: -1;
 }
 
+.about-me-footer {
+  position: relative;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
 /* Home page nav-bar */
+
+#home-contact-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 10rem;
+  width: 50%;
+  height: 2rem;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 0rem 0rem 1rem 1rem;
+}
 
 .home-nav-bar-item {
   height: 100%;
@@ -202,44 +226,6 @@ a:hover {
   font-weight: 500;
 }
 
-#home-nav-bar {
-  width: 7rem;
-  height: 4rem;
-  background-color: rgb(255, 255, 255);
-  border-radius: 2rem 0rem 0rem 2rem;
-  /* position: fixed; */
-  position: absolute;
-  right: -6rem;
-  top: 5vh;
-}
-
-.home-nav-bar {
-  width: 7rem;
-  height: 4rem;
-  background-color: rgb(255, 255, 255);
-  border-radius: 2rem 0rem 0rem 2rem;
-  /* position: fixed; */
-  position: absolute;
-  right: 0rem;
-  top: 5vh;
-
-  animation-name: slideLeft;
-  animation-duration: 2s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-}
-
-@keyframes slideLeft {
-  from {
-    right: -6rem;
-  }
-  to {
-    right: 0;
-  }
-}
-
-/* Contact page nav-bar */
-
 .contact-nav-bar-item {
   height: 100%;
   display: flex;
@@ -254,31 +240,13 @@ a:hover {
   font-weight: 500;
 }
 
-#contact-nav-bar {
-  width: 7rem;
-  height: 4rem;
-  background-color: rgb(255, 255, 255);
-  border-radius: 2rem 0rem 0rem 2rem;
-  /* position: fixed; */
-  position: absolute;
-  right: -6rem;
-  top: 13vh;
-}
-
-.contact-nav-bar {
-  width: 7rem;
-  height: 4rem;
-  background-color: rgb(255, 255, 255);
-  border-radius: 2rem 0rem 0rem 2rem;
-  /* position: fixed; */
-  position: absolute;
-  right: 0rem;
-  top: 13vh;
-
-  animation-name: slideLeft;
-  animation-duration: 2s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
+@keyframes slideLeft {
+  from {
+    right: -6rem;
+  }
+  to {
+    right: 0;
+  }
 }
 
 .home-nav-bar-item a:hover {
@@ -292,15 +260,16 @@ a:hover {
 /* Skills Page */
 
 .skills-container {
-  margin-top: 2rem;
+  margin-top: 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .skills-container h1 {
   font-size: 4rem;
   font-weight: 500;
-  margin-bottom: 3rem;
+  margin: 7rem 0 3rem 0;
   text-align: center;
 }
 
@@ -450,7 +419,7 @@ a:hover {
 /* Work page */
 
 .subtitle {
-  margin: 4rem;
+  margin: 10rem 0 4rem 0;
 }
 
 .work-details {
