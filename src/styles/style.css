@@ -10,6 +10,16 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+.home-body {
+  background-color: rgb(20, 20, 20);
+  color: rgb(255, 255, 255);
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 
 header {
   display: flex;
@@ -113,6 +123,14 @@ a:hover {
   animation-duration: 2s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
+}
+
+@media (max-width: 500px) {
+  .hero-section h1 {
+    font-size: 8rem;
+    font-weight: 700;
+    margin: 0;
+  }
 }
 
 @keyframes slideLeft {
@@ -313,6 +331,19 @@ a:hover {
   }
 }
 
+@media (max-width: 500px) {
+  .skills-footer {
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  .skills-container h1 {
+    margin: 5rem 0 0 0;
+  }
+}
+
 /* Contact Page */
 
 .form-submit {
@@ -442,17 +473,7 @@ a:hover {
   flex-basis: 33%;
 }
 
-@media (max-width: 500px) {
-  .card {
-    width: 90%;
-  }
-  .work-details {
-    width: 90%;
-  }
-}
-
 .card-inner {
-  /* position: relative; */
   width: 100%;
   height: 100%;
   text-align: center;
@@ -486,6 +507,19 @@ a:hover {
   background-position: center center;
   height: 12rem;
   background-blend-mode: screen;
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 100%;
+  }
+  .work-details {
+    width: 90%;
+  }
+
+  .card-picture {
+    height: 7rem;
+  }
 }
 
 .card-details {
