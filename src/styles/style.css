@@ -131,6 +131,26 @@ a:hover {
     font-weight: 700;
     margin: 0;
   }
+
+  #nav-bar {
+    width: 5rem;
+    height: 10rem;
+    border-radius: 1rem 0 0 1rem;
+    right: -3rem;
+    top: 13vh;
+  }
+
+  .nav-bar {
+    width: 5rem;
+    height: 10rem;
+    border-radius: 1rem 0 0 1rem;
+    right: -3rem;
+    top: 13vh;
+  }
+
+  .nav-item a {
+    font-size: x-small;
+  }
 }
 
 @keyframes slideLeft {
@@ -194,6 +214,32 @@ a:hover {
   margin-bottom: 3rem;
   height: 15rem;
   width: 15rem;
+}
+
+@media (max-width: 500px) {
+  .about-container {
+    margin: 0 0rem 0 0rem;
+  }
+
+  .about-container h1 {
+    font-size: 3rem;
+    margin: 4rem 0 2rem 0;
+  }
+
+  .about-container h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-container p {
+    font-size: 1rem;
+    margin: 0rem 1rem 1rem 1rem;
+  }
+
+  .about-container img {
+    height: 10rem;
+    width: 10rem;
+  }
 }
 
 .under-wave {
