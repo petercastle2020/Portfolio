@@ -367,6 +367,14 @@ a:hover {
   height: 60%;
 }
 
+.skills-footer {
+  position: relative;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
 @media only screen and (min-width: 1500px) {
   .skills-row {
     display: flex;
@@ -387,6 +395,10 @@ a:hover {
   }
   .skills-container h1 {
     margin: 5rem 0 0 0;
+  }
+
+  .skills-container .skills-row div p {
+    font-size: 0.5rem;
   }
 }
 
