@@ -453,8 +453,12 @@ a:hover {
 @media only screen and (max-width: 600px) {
   .form-submit {
     width: 90%;
-    position: relative;
-    top: 15vh;
+    position: static;
+    margin: 5rem 0 0 0;
+  }
+
+  .form-submit form {
+    height: auto;
   }
 
   .form-row .form-control {
@@ -470,7 +474,20 @@ a:hover {
   .form-submit .form-row {
     display: flex;
     flex-direction: column;
-    margin: 2rem 0rem;
+    margin: 1rem 0rem;
+  }
+
+  .contact-footer {
+    position: relative;
+    margin-top: 3rem;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-submit textarea {
+    height: 15rem;
   }
 }
 
@@ -489,6 +506,42 @@ a:hover {
   color: rgb(255, 255, 255);
   background-color: rgb(20, 20, 20);
   cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .contact-footer {
+    position: relative;
+    margin-top: 3rem;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-submit {
+    width: 90%;
+    position: static;
+    margin: 5rem 0 0 0;
+  }
+  .form-submit form {
+    height: auto;
+  }
+
+  .form-submit h2 {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .form-submit .form-row {
+    margin: 0.5rem 0;
+  }
+  .form-submit button {
+    margin-top: 1rem;
+  }
+
+  .form-submit textarea {
+    height: 13rem;
+  }
 }
 
 /* Thank you Page */
@@ -632,4 +685,20 @@ table td {
   width: 100vw;
   display: flex;
   justify-content: center;
+}
+
+/* Cross pages @media */
+
+@media (max-width: 500px) {
+  footer ul a {
+    font-size: 0.6rem;
+  }
+
+  #home-contact-bar a {
+    font-size: 0.6rem;
+  }
+
+  #home-contact-bar {
+    height: 1.5rem;
+  }
 }
