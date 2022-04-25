@@ -373,6 +373,7 @@ a:hover {
   width: 100vw;
   display: flex;
   justify-content: center;
+  margin-top: 3rem;
 }
 
 @media only screen and (min-width: 1500px) {
@@ -448,6 +449,15 @@ a:hover {
   padding: 0;
   resize: none;
   width: 100%;
+}
+
+.contact-footer {
+  position: relative;
+  margin-top: 3rem;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 600px) {
