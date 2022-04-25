@@ -212,8 +212,8 @@ a:hover {
 .about-container img {
   border-radius: 50%;
   margin-bottom: 3rem;
-  height: 15rem;
-  width: 15rem;
+  height: 12rem;
+  width: 12rem;
 }
 
 @media (max-width: 500px) {
