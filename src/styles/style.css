@@ -80,6 +80,10 @@ footer ul {
   padding: 1.5rem;
 }
 
+footer ul a {
+  margin: 0 2rem 0 2rem;
+}
+
 a {
   text-decoration: none;
   color: rgb(255, 255, 255);
@@ -710,5 +714,9 @@ table td {
 
   #home-contact-bar {
     height: 1.5rem;
+  }
+
+  footer ul a {
+    margin: 0 1rem 0 1rem;
   }
 }
